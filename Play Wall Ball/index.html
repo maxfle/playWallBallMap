@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Play Wallball</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="navbar-collapse collapse" id="navbarColor02" style="">
+              <ul class="navbar-nav mr-auto">
+                <!-- Modal -->
+                <li class="nav-item">
+                  <a class="nav-link" href="">Add a wall</a>
+                </li>
+              </ul>
+                <!-- Search -->
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Find a wall near you">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+    <!-- Map -->
+    <section id="map">
+      <div class="container">
+        <div id="map"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="main-footer" class="py-1 pt-3 bg-dark sticky-bottom text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 mx-auto">
+                    <p class="lead">
+                        &copy; Max Fleischman <span id="year"></span> All Rights Reserved. United States. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+          
+    <script src="app.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9gHg9Fpd72FxKn_hZijnMoEpJmr7MbKo&callback=initMap">
+    </script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script>
+        // get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+    </script>
+    
+</body>
+</html>

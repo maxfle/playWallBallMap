@@ -1,0 +1,13 @@
+navbar
+- "Play wallball"
+- find walls near you
+- add a new wall 
+-(wallball routines? daily/weekly routines?)
+
+map
+-learning firebase and geofire?
+-when adding a new location(options should be manual or current GPS location)
+-Eventually would like to add options for star rating, pictures, description?
+
+footer
+
