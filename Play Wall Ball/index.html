@@ -9,48 +9,62 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Play Wallball</a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="navbar-collapse collapse" id="navbarColor02" style="">
-              <ul class="navbar-nav mr-auto">
-                <!-- Modal -->
-                <li class="nav-item">
-                  <a class="nav-link" href="">Add a wall</a>
-                </li>
-              </ul>
-                <!-- Search -->
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Find a wall near you">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Play Wallball</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse">
+          <ul class="navbar-nav mr-auto">
+            <!-- Modal -->
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="modal" data-target="#addWallModal">Add a wall</a>
+            </li>
+          </ul>
+            <!-- Search -->
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Find a wall near you">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+      </nav>
 
-    <!-- Map -->
-    <section id="map">
-      <div class="container">
-        <div id="map"></div>
-      </div>
-    </section>
+<!-- Map -->
+<section id="map">
+  <div class="container">
+    <div id="map"></div>
+  </div>
+</section>
 
-    <!-- Footer -->
+<!-- Footer -->
 
-    <footer id="main-footer" class="py-1 pt-3 bg-dark sticky-bottom text-white">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 mx-auto">
-                    <p class="lead">
-                        &copy; Max Fleischman <span id="year"></span> All Rights Reserved. United States. 
-                    </p>
-                </div>
+<footer id="main-footer" class="py-4 bg-dark text-white">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-6 mx-auto">
+                <p class="lead">
+                    &copy; 1986 Development. <span id="year"></span> All Rights Reserved. United States. <a href="https://1986dev.com" class="href">1986dev.com</a>
+                  </p>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
+    <!-- Add a wall Modal -->
+
+<div class="modal fade text-dark" id="addWallModal">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-body">
+              <h3 class="text-center">Send me a wall to add</h3>
+              <form>
+                <input type="text" placeholder="address" class="form-control">
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
           
     <script src="app.js"></script>
     <script async defer

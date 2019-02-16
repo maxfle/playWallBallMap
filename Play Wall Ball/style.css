@@ -1,5 +1,27 @@
 #map{
-    height:500px;
+    height:600px;
     width:90%;
     margin: auto;
   }
+
+#main-footer {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  }
+  
+#main-footer a:link {
+  text-decoration: none;
+  color: white;
+}
+#main-footer a:hover {
+  color: hotpink;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+}
+
+.modal {
+  width: 100px;
+}
